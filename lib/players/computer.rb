@@ -35,7 +35,10 @@ class Players
             end
         # If opponent blocking win and can't win, setup two way win
           end
-          @best_move = 3 if best_move == 10
+          if best_move == 10
+            @best_move = 7 if current_board[2] = opp_token && current_board[9] = opp_token
+            @best_move = 3 if current_board[4] = opp_token && current_board[9] = opp_token
+          end
         end
       end
       #Move 6-9:
