@@ -37,8 +37,8 @@ class Players
           end
           if best_move == 10
             binding.pry
-            @best_move = 7 if current_board[1] == opp_token && current_board[9] == opp_token
-            @best_move = 3 if current_board[4] == opp_token && current_board[9] == opp_token
+            @best_move = 7 if current_board[1] == opp_token && current_board[8] == opp_token
+            @best_move = 3 if current_board[3] == opp_token && current_board[8] == opp_token
           end
         end
       end
